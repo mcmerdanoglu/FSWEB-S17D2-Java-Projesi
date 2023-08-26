@@ -1,6 +1,10 @@
 package com.SpringBootS17G2.dependencyinjectionproject.tax;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class DeveloperTax implements Taxable{
+    //@Component eklenmezse Spring bu sınıfı tanıyamıyor ve hata veriyor.
     @Override
     public double getSimpleTaxRate() {
         return 0.25;
